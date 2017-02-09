@@ -49,15 +49,17 @@
   function createFlickrThumb(photoData) {
 
     var link = document.createElement('a');
+    link.setAttribute('class', 'example-image-link');
     link.setAttribute('href', photoData.large);
-    link.setAttribute('target', '_blank');
+    link.setAttribute('data-lightbox', photoData.large);
 
     var image = document.createElement('img');
+    image.setAttribute('class', 'example-image');
     image.setAttribute('src', photoData.thumb);
     image.setAttribute('alt', photoData.title);
 
     link.appendChild(image);
-
+    
     return link;
 
   }
