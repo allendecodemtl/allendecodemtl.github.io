@@ -1,3 +1,11 @@
 .red {
   color: red;
 }
+
+body {
+  /*
+  The font-family property is _inherited_. This means that if we apply it to <body>, it will apply to all its children as well. This code sets the base font family for all the page. Because it's inherited, it can also be easily overridden with a simple CSS rule.
+  */
+  font-family: sans-serif;
+  background-color: #f6f6f6; /* super-light grey background, enough to not be completely white */
+}
